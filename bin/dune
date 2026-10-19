@@ -1,0 +1,4 @@
+(executable
+  (name led)
+  (libraries hardcaml core)
+  (preprocess (pps ppx_hardcaml)))
