@@ -1,0 +1,9 @@
+; Generate Verilog RTL.
+(rule
+ (target led.v)
+ (deps
+  bin/led.ml
+  bin/dune
+  dune-project)
+ (action
+  (run %{exe:bin/led.exe})))
